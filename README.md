@@ -21,7 +21,7 @@ Para salir, usar la opción "0".
 
 CREDITOS: a todas las personas que desarrollaron los emluladores, ya que sin ellos, no sería posible realizar este pequeño proyecto para englobar sus instaladores.
 
-IMPORTANTE: NO contiene juegos, ni archivos de configuración (Firmwares Oficiales o BIOS), ya que esto es ilegal y no serán facilitados, para eso, está internet.
+IMPORTANTE: NO contiene juegos, ni archivos de configuración (Firmwares Oficiales o BIOS), ya que esto es ilegal y no serán facilitados.
 
 ####################################################################################
 
@@ -43,6 +43,6 @@ To exit, use option "0".
 
 CREDITS: to all the people who developed the emulators, since without them, it would not be possible to carry out this small project to include their installers.
 
-IMPORTANT: It does NOT contain games or configuration files (Official Firmwares or BIOS), since this is illegal and will not be provided, for that, there is the Internet.
+IMPORTANT: It does NOT contain games or configuration files (Official Firmwares or BIOS), since this is illegal and will not be provided.
 
 ####################################################################################
