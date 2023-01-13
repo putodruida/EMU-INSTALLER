@@ -75,6 +75,8 @@ echo . Xenia [XBOX 360] -------------------- 13
 echo .
 echo . PPSSPP [PSP] ------------------------ 14
 echo .
+echo . Project64 [Nintendo 64] ------------- 15
+echo .
 echo . SALIR -------------------------------- 0
 echo .
 set /p respuesta= Escribe el numero: 
@@ -92,6 +94,7 @@ IF %respuesta%==11 goto cemu
 IF %respuesta%==12 goto xemu
 IF %respuesta%==13 goto xenia
 IF %respuesta%==14 goto ppsspp
+IF %respuesta%==15 goto project64
 IF %respuesta%==0 goto salir
 
 REM ############################################
@@ -437,7 +440,26 @@ goto inicio
 REM FIN ppsspp
 REM ############################################
 
+REM *****************************************************************************************
 
+REM ############################################
+REM INICIO project64
+:project64
+md "C:\Emuladores"
+md "C:\Emuladores\Nintendo 64"
+md "C:\Emuladores\Nintendo 64\Project64"
+cls
+
+powershell -command "Expand-Archive -Force '%~dp0\Nintendo 64\Project64\Project64*.zip' 'C:\Emuladores\Nintendo 64\Project64'"
+
+cls
+copy "%~dp0\Nintendo 64\Project64\Project64.lnk" "C:\Users\%USERNAME%\Desktop"
+
+REM Vuelve al inicio
+goto inicio
+
+REM FIN ppsspp
+REM ############################################
 
 :salir
 DEL /F /A "%~dp0\Tools\.wget-hsts"
