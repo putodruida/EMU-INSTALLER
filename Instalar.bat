@@ -247,8 +247,9 @@ REM INICIO GBA
 md "C:\Emuladores"
 md "C:\Emuladores\GB-GBC-GBA"
 md "C:\Emuladores\GB-GBC-GBA\VisualBoyAdvance"
-cls
 
+cls 
+powershell -command "Expand-Archive -Force '%~dp0\GB GBC GBA\VisualBoyAdvance.zip' 'C:\Emuladores\GB-GBC-GBA\VisualBoyAdvance'"
 cls
 copy "C:\Emuladores\GB-GBC-GBA\VisualBoyAdvance\VisualBoyAdvance.lnk" "C:\Users\%USERNAME%\Desktop"
 cls
@@ -270,7 +271,8 @@ md "C:\Emuladores"
 md "C:\Emuladores\DS"
 md "C:\Emuladores\DS\DeSmuME"
 cls
-xcopy "%~dp0\Nintendo DS\desmume-0.9.13-win64" "C:\Emuladores\DS\DeSmuME" /e /d /y
+
+powershell -command "Expand-Archive -Force '%~dp0\Nintendo DS\desmume*.zip' 'C:\Emuladores\DS\DeSmuME'"
 
 cls
 copy "C:\Emuladores\DS\DeSmuME\DeSmuME.lnk" "C:\Users\%USERNAME%\Desktop"
