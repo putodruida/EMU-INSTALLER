@@ -73,6 +73,7 @@ echo . Xemu [XBOX Classic] ----------------- 12
 echo .
 echo . Xenia [XBOX 360] -------------------- 13
 echo .
+echo . PPSSPP [PSP] ------------------------ 14
 echo .
 echo . SALIR -------------------------------- 0
 echo .
@@ -90,6 +91,7 @@ IF %respuesta%==10 goto dolphin
 IF %respuesta%==11 goto cemu
 IF %respuesta%==12 goto xemu
 IF %respuesta%==13 goto xenia
+IF %respuesta%==14 goto ppsspp
 IF %respuesta%==0 goto salir
 
 REM ############################################
@@ -410,6 +412,30 @@ REM FIN xenia
 REM ############################################
 
 REM *****************************************************************************************
+
+
+REM ############################################
+REM INICIO ppsspp
+:ppsspp
+md "C:\Emuladores"
+md "C:\Emuladores\PSP"
+md "C:\Emuladores\PSP\PPSSPP"
+cls
+%~dp0\Tools\wget.exe "https://www.ppsspp.org/files/1_14_4/ppsspp_win.zip"
+
+cls
+
+powershell -command "Expand-Archive -Force '%~dp0ppsspp*.zip' 'C:\Emuladores\PSP\PPSSPP'"
+
+DEL /F /A "%~dp0ppsspp*.zip"
+copy "%~dp0\PSP\PPSSPP\PPSSPP - 32bits.lnk" "C:\Users\%USERNAME%\Desktop"
+copy "%~dp0\PSP\PPSSPP\PPSSPP - 64bits.lnk" "C:\Users\%USERNAME%\Desktop"
+
+REM Vuelve al inicio
+goto inicio
+
+REM FIN ppsspp
+REM ############################################
 
 
 
