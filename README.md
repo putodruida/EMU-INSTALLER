@@ -1,6 +1,7 @@
 # EMU-INSTALLER
 Emulators Installer for Windows 64bits.
 
+#######################################################################################################################################################
 
 [ESP]
 
@@ -22,6 +23,7 @@ CREDITOS: a todas las personas que desarrollaron los emluladores, ya que sin ell
 
 IMPORTANTE: NO contiene juegos, ni archivos de configuración (Firmwares Oficiales o BIOS), ya que esto es ilegal y no serán facilitados, para eso, está internet.
 
+#######################################################################################################################################################
 
 [ENG]
 
@@ -42,3 +44,5 @@ To exit, use option "0".
 CREDITS: to all the people who developed the emulators, since without them, it would not be possible to carry out this small project to include their installers.
 
 IMPORTANT: It does NOT contain games or configuration files (Official Firmwares or BIOS), since this is illegal and will not be provided, for that, there is the Internet.
+
+#######################################################################################################################################################
